@@ -5,7 +5,7 @@ def call ( String url, String gname, String repolist, String creds ) {
   println glist
   println "STEP 1 ======================"
 
-  def rlist = nexusMultilineinput( String repolist )
+  def rlist = nexusMultilineinput( repolist )
 
   def genlist = nexusGeneratenewlistarray ( nlist as String[], repolist as String[] )
 
