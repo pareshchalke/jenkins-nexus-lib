@@ -12,6 +12,8 @@ def call ( String str ) {
         name("$reponame")
         providerRole("org.sonatype.nexus.proxy.repository.Repository")
         exposed(true)
+        browseable(true)
+        indexable(true)
         provider("maven2")
         format("maven2")
         repoPolicy("RELEASE")
