@@ -1,4 +1,3 @@
-@NonCPS
 def call ( String url, String gname, String repolist, String creds ) {
   def nlist = nexusGetallrepo( url )
   println nlist
