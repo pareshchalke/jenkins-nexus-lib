@@ -1,4 +1,6 @@
 @NonCPS
+import groovy.json.*
+
 def call ( String str ) {
     remoteUri = str
     repodomain = str.split('/')
