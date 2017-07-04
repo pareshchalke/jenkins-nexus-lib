@@ -7,7 +7,7 @@ def call ( String url, String gname, String repolist, String creds ) {
 
   def rlist = nexusMultilineinput( repolist )
 
-  def genlist = nexusGeneratenewlistarray ( nlist as String[], repolist as String[] )
+  def genlist = nexusGeneratenewlistarray ( nlist as String[], rlist as String[] )
 
   genlist.each {
     nexusAddrepo(it,url,creds)
