@@ -7,5 +7,5 @@ def call ( String url ) {
       repo = it.remoteUri
       repo && nexuslist << it.remoteUri
   }
-  nexuslist
+  return nexuslist
 }
