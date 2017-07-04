@@ -1,17 +1,11 @@
-def call ( String url, String gname, String[] repolist, String creds ) {
+def call ( String url, String gname, String repolist, String creds ) {
   def nlist = nexusGetallrepo( url )
   println nlist
   def glist = nexusGetgroup( url , gname )
   println glist
   println "STEP 1 ======================"
-  
-  @NonCPS
-  def printParams() {
-    Params.split("\\r?\\n").each { param ->
-      println "Param: ${param}"
-    }
-  }
-  printParams()
+
+  def rlist = nexusMultilineinput( String repolist )
 
   def genlist = nexusGeneratenewlistarray ( nlist as String[], repolist as String[] )
 
