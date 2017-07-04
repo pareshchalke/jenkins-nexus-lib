@@ -7,5 +7,7 @@ def call ( String url ) {
       repo = it.remoteUri
       repo && nexuslist << it.remoteUri
   }
+  println "nexusGetallrepo method ========================="
+  println nexuslist
   return nexuslist
 }
