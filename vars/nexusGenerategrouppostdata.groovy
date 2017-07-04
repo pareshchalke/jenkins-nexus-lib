@@ -1,5 +1,5 @@
 @NonCPS
-def generategrouppostdata( String str, String url, String list , String gname) {
+def call ( String str, String url, String list , String gname) {
     remoteUri = str
     repodomain = str.split('/')
     reponame = repodomain[2].replace(".","-")
