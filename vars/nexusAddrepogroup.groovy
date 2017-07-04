@@ -1,5 +1,6 @@
 @NonCPS
-def call (String list, String url, String gname, String creds) {
+def call ( String list, String url, String gname, String creds ) {
+  println "Add repogroup method"
   members = nexusGetgroup(url,gname)
   println "print Addrepogroup members"
   println members
