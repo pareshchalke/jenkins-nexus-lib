@@ -1,3 +1,5 @@
+import groovy.json.*
+
 def call ( String url, String gname ) {
     def gmemberlist = []
     def response = httpRequest acceptType: 'APPLICATION_JSON', url: "${url}/service/local/repo_groups/${gname}"
