@@ -7,5 +7,6 @@ def call ( String url, String gname, String repolist, String creds ) {
   genlist.each {
     nexusAddrepo(it,url,creds)
     nexusAddrepogroup(it,url,gname,creds)
+    println "iterating ${it}"
   }
 }
