@@ -1,3 +1,4 @@
+@NonCPS
 def call ( String url, String gname, String repolist, String creds ) {
   println "Createrepojenkins method"
   println repolist
