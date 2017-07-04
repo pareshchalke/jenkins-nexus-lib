@@ -4,6 +4,15 @@ def call ( String url, String gname, String[] repolist, String creds ) {
   def glist = nexusGetgroup( url , gname )
   println glist
   println "STEP 1 ======================"
+  
+  @NonCPS
+  def printParams() {
+    Params.split("\\r?\\n").each { param ->
+      println "Param: ${param}"
+    }
+  }
+  printParams()
+
   def genlist = nexusGeneratenewlistarray ( nlist as String[], repolist as String[] )
 
   genlist.each {
