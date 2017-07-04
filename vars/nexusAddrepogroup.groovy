@@ -1,6 +1,6 @@
 @NonCPS
 def call (String list, String url, String gname, String creds) {
-    def members = nexusGetgroup(url,gname)
+    members = nexusGetgroup(url,gname)
     println "print Addrepogroup members"
     println members
     postdata = nexusGenerategrouppostdata(list,url,members,gname)
