@@ -6,6 +6,5 @@ def call ( String url, String gname ) {
     def jsonout = response.content
     def json = readJSON text: jsonout
     def out = JsonOutput.toJson(json)
-    println "reading group info"
-    out
+    return out
 }
