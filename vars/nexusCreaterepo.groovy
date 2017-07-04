@@ -5,7 +5,7 @@ def call ( String url, String gname, String repolist, String creds ) {
   def genlist = nexusGeneratenewlist ( nlist as String[], repolist )
 
   genlist.each {
-    nexusaddrepo(it,url,creds)
+    nexusAddrepo(it,url,creds)
     nexusAddrepogroup(it,url,gname,creds)
   }
 }
