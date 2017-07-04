@@ -1,3 +1,4 @@
+@NonCPS
 def call (String list, String url, String gname, String creds) {
     def members = getgroupmembers(url)
     postdata = generategrouppostdata(list,url,members,gname)
