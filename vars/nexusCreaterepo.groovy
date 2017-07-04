@@ -2,7 +2,7 @@ def call ( String url, String gname, String repolist, String creds ) {
   def nlist = nexusGetallrepo( url )
   def glist = nexusGetgroup( url , gname )
 
-  def genlist = nexusGeneratenewlist ( nlist as String[], repofile )
+  def genlist = nexusGeneratenewlist ( nlist as String[], repolist )
 
   genlist.each {
     nexusaddrepo(it,url,creds)
